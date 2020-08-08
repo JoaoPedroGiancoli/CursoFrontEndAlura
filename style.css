@@ -237,6 +237,7 @@ td, th{
     width: 60%;
     float: right;
     margin: 0 20px 20px 0;
+    box-shadow: 10px 10px 100px #000000;
 }
 
 .mapa{
@@ -264,4 +265,22 @@ mapa-conteudo{
     margin: 6em auto;
     text-align: center;
     padding-top: 3em;
+}
+
+/* p:not(#missao) */
+
+@media screen and (max-width:480px){
+    .caixa,.principal,.conteudo-beneficios,.mapa,.video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .list-beneficios,.imagem-beneficios{
+       width: 100%;
+    }
 }
